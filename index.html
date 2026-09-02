@@ -1,23 +1,1180 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "2026 임플란트 치과보험 비교 분석 및 연령별 맞춤 가이드",
+      "url": "https://guide.reliabledone.com/dental-insurance",
+      "description": "2026년 최신 임플란트 치과보험 요금제, 다이렉트 가격 비교, 20대부터 80대까지 연령별 맞춤 설계, 보철치료 및 보존치료 차이점 완벽 정리.",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "치아 상실 및 임플란트 식립 치료"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "임플란트 치과보험 가입 후 바로 보장받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "무진단형 임플란트 치과보험은 가입일로부터 90일의 면책기간이 적용되며, 1년 또는 2년(12개월~24개월) 동안은 약정 금액의 50퍼센트만 지급되는 감액기간이 존재합니다. 진단형 상품의 경우 가입 즉시 100퍼센트 보장이 가능하나 사전 치과 검진이 필수입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "65세 이상 건강보험 임플란트와 민간 치과보험 중복 보장이 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가능합니다. 만 65세 이상 어르신은 평생 2개까지 국민건강보험 요양급여를 통해 30퍼센트 본인부담금만 내고 임플란트 치료를 받을 수 있으며, 민간 정액형 치과보험에 가입되어 있다면 가입 금액 전액을 중복으로 청구하여 수령할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "임플란트 치조골 뼈이식 비용도 보험 처리가 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기본 임플란트 보철 특약 외에 치조골 이식수술비(골이식술) 특약에 가입되어 있다면 1회당 20만원에서 50만원 상당의 추가 지원금을 중복 지급받을 수 있습니다."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --primary: #1e40af;
+            --primary-light: #eff6ff;
+            --primary-hover: #1d4ed8;
+            --accent: #0f766e;
+            --accent-light: #f0fdfa;
+            --warm-accent: #b45309;
+            --warm-light: #fffbeb;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-title: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-soft: #e2e8f0;
+            --border-highlight: #cbd5e1;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-body);
+            line-height: 1.85;
+            font-size: 16px;
+            letter-spacing: -0.015em;
+            word-break: keep-all;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
+            color: #ffffff;
+            padding: 4.5rem 1.5rem 3.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        .header-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .badge-header {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            color: #ffffff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            color: #e2e8f0;
+            max-width: 780px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: all 0.25s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: var(--primary);
+        }
+
+        main {
+            max-width: 1040px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-soft);
+            transition: box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.025em;
+            position: relative;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--border-soft);
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 70px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-top: 1.4rem;
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            margin-bottom: 1.3rem;
+            color: var(--text-body);
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem 1.8rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 1.8rem 0;
+            font-size: 1rem;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warm-box {
+            background-color: var(--warm-light);
+            border-left: 4px solid var(--warm-accent);
+            padding: 1.5rem 1.8rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 1.8rem 0;
+            color: #78350f;
+        }
+
+        ul, ol {
+            margin: 1.2rem 0 1.5rem 1.5rem;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.7rem;
+            color: var(--text-body);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .tag-cloud span {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-sm);
+        }
+
+        th, td {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: var(--text-title);
+            font-weight: 700;
+            border-bottom: 2px solid var(--border-soft);
+            text-align: center;
+        }
+
+        td {
+            border-bottom: 1px solid var(--border-soft);
+            background-color: #ffffff;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fafbfc;
+        }
+
+        tr:hover td {
+            background-color: #f1f5f9;
+        }
+
+        .table-center td {
+            text-align: center;
+        }
+
+        .calc-wrapper {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid var(--border-soft);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin: 2.5rem 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .calc-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .calc-field label {
+            font-weight: 700;
+            color: var(--text-title);
+            font-size: 0.95rem;
+        }
+
+        .calc-field select, .calc-field input {
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-highlight);
+            font-size: 1rem;
+            background-color: #ffffff;
+            color: var(--text-title);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .calc-field select:focus, .calc-field input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .calc-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: #ffffff;
+            border: none;
+            padding: 16px 24px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.15s ease, opacity 0.2s;
+        }
+
+        .calc-btn:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+        }
+
+        .calc-result-box {
+            margin-top: 2rem;
+            padding: 1.8rem;
+            background-color: #ffffff;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-sm);
+            display: none;
+        }
+
+        .calc-result-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.7rem 0;
+            border-bottom: 1px dashed var(--border-soft);
+            font-size: 1rem;
+        }
+
+        .calc-result-row:last-child {
+            border-bottom: none;
+            padding-top: 1rem;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .chart-container {
+            background: #ffffff;
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .bar-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .bar-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: var(--text-title);
+        }
+
+        .bar-track {
+            background-color: #e2e8f0;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #0f766e);
+            border-radius: 12px;
+            width: 0%;
+            transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-card {
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            background: #ffffff;
+        }
+
+        .faq-q {
+            padding: 1.2rem 1.6rem;
+            background-color: #ffffff;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-title);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .faq-q:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-q-text {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .faq-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 0.9rem;
+        }
+
+        .faq-toggle-state {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .faq-a {
+            padding: 0 1.6rem 1.4rem;
+            background-color: #ffffff;
+            display: none;
+            color: var(--text-body);
+            line-height: 1.8;
+            font-size: 0.98rem;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 1.2rem;
+        }
+
+        .ext-links-card {
+            background-color: #f8fafc;
+            border-radius: var(--radius-md);
+            padding: 1.8rem;
+            border: 1px solid var(--border-soft);
+            margin-top: 1.5rem;
+        }
+
+        .ext-link-item {
+            display: block;
+            padding: 1rem 1.2rem;
+            margin-bottom: 0.8rem;
+            background: #ffffff;
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .ext-link-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            transform: translateX(4px);
+        }
+
+        .ext-link-desc {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 0.3rem;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 3.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 1.2rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 1.8rem 1.2rem;
+                margin-bottom: 2rem;
+            }
+            .calc-wrapper {
+                padding: 1.5rem 1.2rem;
+            }
+            th, td {
+                padding: 0.75rem 0.6rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="badge-header">2026 임플란트 치과보험 전문 종합 리포트</span>
+            <h1>임플란트 치과보험 비교 분석 및 연령별 가이드</h1>
+            <p>보철치료 보장 범위, 다이렉트 최저가 견적, 면책기간 및 감액기간 기준, 65세 이상 건강보험 본인부담금 중복 혜택까지 체계적으로 비교 분석합니다.</p>
+            <nav aria-label="메인 목차">
+                <ul>
+                    <li><a href="#structure-analysis">보장 구조 분석</a></li>
+                    <li><a href="#age-guide">연령별 맞춤 설계</a></li>
+                    <li><a href="#cost-comparison">보험사별 가격 비교</a></li>
+                    <li><a href="#community-review">실제 청구 후기</a></li>
+                    <li><a href="#ai-insights">AI 분석 데이터</a></li>
+                    <li><a href="#interactive-calc">실시간 견적 계산기</a></li>
+                    <li><a href="#faq-section">자주 묻는 질문</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <!-- 섹션 1: 임플란트 치과보험 핵심 구조 -->
+        <section id="structure-analysis">
+            <h2>2026년 임플란트 치과보험 핵심 개요 및 보장 체계 분석</h2>
+            <p>치아 상실로 인한 <strong>임플란트</strong> 식립 치료는 현대 치의학에서 자연치아를 대체하는 가장 우수한 시술법으로 자리 잡았습니다. 그러나 비급여 항목에 해당하는 임플란트 치료는 1개당 평균 100만원에서 200만원을 상회하는 상당한 <strong>비용</strong>이 발생하여 가계 경제에 적지 않은 부담을 안겨줍니다. 이에 따라 많은 분들이 <strong>임플란트 치과보험</strong> <strong>가입</strong>을 통해 예상치 못한 치과 진료비 지출을 방어하고자 합니다.</p>
+
+            <div class="highlight-box">
+                <p><strong>치과보험의 대분류: 보철치료와 보존치료의 차이점</strong></p>
+                <p>치과보험의 보장 영역은 크게 영구치를 상실했을 때 인공 치아를 만들어주는 <strong>보철치료</strong>(임플란트, 틀니, 브릿지)와 자연치아를 최대한 보존하여 수리하는 <strong>보존치료</strong>(크라운, 인레이, 온레이, 복합레진)로 양분됩니다. 임플란트는 보철치료의 핵심 항목으로서 가입 금액과 지급 한도에 따라 보험료 차이가 크게 발생합니다.</p>
+            </div>
+
+            <p>치과보험 상품은 가입 형태에 따라 <strong>진단형</strong>과 <strong>무진단형</strong>으로 엄격히 구분되며, 두 형태 사이에는 명확한 <strong>장단점</strong>과 규정이 존재합니다.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>진단형 치과보험</th>
+                        <th>무진단형 치과보험 (다이렉트 표준)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>가입 심사 방식</strong></td>
+                        <td>가입 전 치과 내원하여 방사선 사진 및 치아 검진 필수</td>
+                        <td>치과 방문 없이 3가지 알릴 의무 고지 후 전화/온라인 가입</td>
+                    </tr>
+                    <tr>
+                        <td><strong>면책기간 (보장 개시)</strong></td>
+                        <td>면책기간 없음 (계약 체결 즉시 100퍼센트 보장)</td>
+                        <td>가입일로부터 90일간 면책 (보험금 지급 불가)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>감액기간 (지급 비율)</strong></td>
+                        <td>감액기간 없음 (첫날부터 가입 금액 전액 지급)</td>
+                        <td>가입 후 1년 또는 2년(12개월~24개월) 동안 50퍼센트 감액 지급</td>
+                    </tr>
+                    <tr>
+                        <td><strong>보장 한도 (연간 개수)</strong></td>
+                        <td>무제한 식립 보장 가능 상품 다수</td>
+                        <td>연간 3개 한도 또는 2년 이후 무제한 조건 적용</td>
+                    </tr>
+                    <tr>
+                        <td><strong>월 납입 보험료 수준</strong></td>
+                        <td>상대적으로 높음 (철저한 심사 기반)</td>
+                        <td>상대적으로 저렴함 (다이렉트 상품으로 최저가 구성 가능)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>임플란트 시술 시 꼭 알아야 할 주요 특약 및 세부 담보</h3>
+            <p>단순히 임플란트 식립 비용만 보장받는 것으로는 전체 치과 수술 비용을 온전히 충당하기 어렵습니다. 잇몸뼈(치조골)의 소실이 심한 환자는 임플란트 기둥을 식립하기 전 뼈를 이식하는 <strong>치조골 이식술</strong>을 반드시 병행해야 하며, 이 비용은 1개당 평균 30만원에서 80만원까지 별도로 청구됩니다.</p>
+            <ul>
+                <li><strong>치조골 이식수술비 특약:</strong> 임플란트 시술을 목적으로 치조골 이식술(골이식술)을 시행할 경우 회당 20만원에서 50만원의 추가 지원금을 중복 지급합니다.</li>
+                <li><strong>재식립 임플란트 보장 특약:</strong> 임플란트 식립 후 골유착 실패나 주위염으로 인해 임플란트를 제거하고 재식립하는 경우 재수술 비용을 지원합니다.</li>
+                <li><strong>특정 발치 치료비:</strong> 보철치료의 전제 조건이 되는 영구치 발치(발치술) 비용을 치아당 지원하는 필수 부가 담보입니다.</li>
+            </ul>
+
+            <div class="tag-cloud">
+                <span>보철치료특약</span>
+                <span>치조골이식술</span>
+                <span>면책기간90일</span>
+                <span>감액기간12개월</span>
+                <span>재식립임플란트</span>
+                <span>무진단형치아보험</span>
+                <span>크라운보장</span>
+                <span>비급여치과진료</span>
+            </div>
+        </section>
+
+        <!-- 섹션 2: 연령별 맞춤 가이드 (35개 이상 연령 타겟 키워드 포함) -->
+        <section id="age-guide">
+            <h2>연령대별 맞춤형 임플란트 치과보험 설계 전략 및 보장 한도 분석</h2>
+            <p>치아 건강 상태와 구강 노화 정도는 연령대에 따라 극명하게 달라지므로, 동일한 보험 상품이라도 나이에 맞는 설계가 수반되어야 가성비를 극대화할 수 있습니다. <strong>20대</strong> 청년층부터 <strong>80대</strong> 노년층까지 생애주기별 구강 관리 목표와 최적의 <strong>요금제</strong> 선택법을 안내합니다.</p>
+
+            <h3>1. 청년층 (20대초반, 20대후반, 20대청년, 30대사회초년생, 30대직장인, 30대기혼자)</h3>
+            <p><strong>20대</strong> 및 <strong>30대</strong> 시기는 충치(치아우식증)와 잇몸 염증 치료 비중이 높으나, 불의의 외상이나 잇몸 파괴로 조기 발치를 겪는 경우도 존재합니다. <strong>20대임플란트보험</strong> 가입 시에는 고가의 보철 위주 설계보다는 <strong>20대레진치료</strong>, <strong>20대크라운</strong>, 인레이 중심의 보존치료 플랜에 최소한의 임플란트(100만원 수준)를 결합하여 월 1만원에서 2만원대의 <strong>저렴한곳</strong>을 선택하는 것이 합리적입니다.</p>
+            <p><strong>30대</strong> 직장인은 잦은 야근과 스트레스로 치경부 마모증 및 치주 질환이 시작되는 분기점입니다. <strong>30대치아보험</strong>을 미리 준비하면 향후 40대에 발생할 수 있는 보철 수요를 감액기간 없이 대비할 수 있으며, <strong>30대크라운치료</strong>와 <strong>30대보존치료</strong>를 든든하게 챙길 수 있습니다.</p>
+
+            <h3>2. 중장년층 (40대직장인, 40대학부모, 40대중년, 50대중장년, 50대은퇴준비, 50대자영업자)</h3>
+            <p><strong>40대</strong>에 진입하면 과거 치료받았던 보철물의 교체 주기가 도래하고 잇몸 퇴축이 본격화됩니다. <strong>40대임플란트치과보험</strong> 가입 시에는 임플란트 보장 금액을 치아당 150만원에서 200만원으로 설정하고, 연간 개수 제한이 2년 후 무제한으로 풀리는 상품을 선택하는 것이 유리합니다. <strong>40대보존치료</strong>와 <strong>40대보철치료</strong>를 균형 있게 구성해야 합니다.</p>
+            <p><strong>50대</strong>는 임플란트와 브릿지 등 실제 보철 치료가 가장 폭발적으로 발생하는 연령입니다. <strong>50대치과보험</strong> 및 <strong>50대치아보험비교</strong> 시에는 <strong>50대보철치료</strong> 한도를 최대로 높이고 치조골 이식수술비 특약을 필히 추가해야 합니다. <strong>50대임플란트비용</strong>은 복수의 치아를 동시에 식립하는 경우가 많아 자기부담금 축소를 위한 고보장 플랜이 권장됩니다.</p>
+
+            <h3>3. 실버 및 노년층 (60대은퇴자, 60대실버, 60대노후, 65세이상, 65세고령자, 70대, 70대어르신, 80대, 80대노년층)</h3>
+            <p><strong>60대</strong> 이상의 <strong>노년층</strong> 및 <strong>실버세대</strong>는 <strong>60대틀니임플란트보험</strong>과 <strong>60대임플란트보장</strong>의 중요성이 매우 큽니다. 특히 대한민국 복지 정책상 <strong>65세이상건강보험적용</strong> 혜택으로 평생 2개의 임플란트를 30퍼센트 본인부담금(약 38만원에서 42만원)으로 식립할 수 있습니다.</p>
+            <p>따라서 <strong>65세고령자</strong>, <strong>70대어르신</strong>, <strong>80대노년층</strong>은 건강보험이 적용되지 않는 3번째 임플란트 식립부터 민간 <strong>70대치아보장</strong>을 집중 활용하는 <strong>이중 보장 전략</strong>을 수립해야 합니다. <strong>70대틀니보험</strong>과 연계하여 부분 틀니 및 완전 틀니 보장 금액을 함께 확보하는 것이 경제적입니다.</p>
+
+            <table class="table-center">
+                <thead>
+                    <tr>
+                        <th>대상 연령대</th>
+                        <th>주요 타깃 질환</th>
+                        <th>권장 임플란트 보장액</th>
+                        <th>추천 특약 구성</th>
+                        <th>예상 월 보험료</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20대 청년층</td>
+                        <td>충치, 파절, 단순 스케일링</td>
+                        <td>개당 70만원 ~ 100만원</td>
+                        <td>복합레진, 인레이, 크라운</td>
+                        <td>15,000원 ~ 22,000원</td>
+                    </tr>
+                    <tr>
+                        <td>30대 직장인</td>
+                        <td>치경부마모증, 치주염</td>
+                        <td>개당 100만원 ~ 150만원</td>
+                        <td>크라운 무제한, 잇몸치료</td>
+                        <td>23,000원 ~ 33,000원</td>
+                    </tr>
+                    <tr>
+                        <td>40대 중년층</td>
+                        <td>보철물 재치료, 만성 치주염</td>
+                        <td>개당 150만원 ~ 200만원</td>
+                        <td>임플란트 무제한, 골이식</td>
+                        <td>35,000원 ~ 48,000원</td>
+                    </tr>
+                    <tr>
+                        <td>50대 장년층</td>
+                        <td>다수 치아 상실, 치조골 흡수</td>
+                        <td>개당 150만원 ~ 200만원</td>
+                        <td>치조골이식, 브릿지, 틀니</td>
+                        <td>49,000원 ~ 68,000원</td>
+                    </tr>
+                    <tr>
+                        <td>60대 실버층</td>
+                        <td>광범위 치아 결손, 무치악</td>
+                        <td>개당 100만원 ~ 150만원</td>
+                        <td>틀니 정액, 재식립 보장</td>
+                        <td>55,000원 ~ 79,000원</td>
+                    </tr>
+                    <tr>
+                        <td>70대 이상</td>
+                        <td>완전 무치악, 구강 건조증</td>
+                        <td>개당 100만원 (건보 연계)</td>
+                        <td>완전틀니, 의치 치료</td>
+                        <td>60,000원 ~ 85,000원</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tag-cloud">
+                <span>20대초반치과보험</span>
+                <span>20대후반치아보장</span>
+                <span>30대직장인치아보험</span>
+                <span>40대학부모보험견적</span>
+                <span>50대은퇴준비보험</span>
+                <span>60대실버치과보험</span>
+                <span>65세이상임플란트지원</span>
+                <span>70대치아보험추천</span>
+                <span>80대노년층틀니</span>
+            </div>
+        </section>
+
+        <!-- 섹션 3: 보험사별 가격 비교 및 순위 -->
+        <section id="cost-comparison">
+            <h2>주요 보험사별 임플란트 치과보험 비교 순위 및 다이렉트 최저가 견적</h2>
+            <p>국내 주요 손해보험사 및 생명보험사의 <strong>치과보험 브랜드</strong> 상품들은 회사별로 임플란트 1개당 지급 <strong>금액</strong>, 감액기간 산정 기준, 갱신 주기(3년, 5년, 10년, 20년)에 따라 <strong>월 요금</strong> 차이가 큽니다. 다이렉트 <strong>온라인 사이트</strong>를 활용하여 중간 설계사 수수료를 절감하면 15퍼센트에서 25퍼센트까지 <strong>가장 저렴한곳</strong>을 찾아 <strong>최저가</strong>로 가입할 수 있습니다.</p>
+
+            <h3>2026년 상위 주요 보험사 임플란트 상품 비교표 (500M / 표준 40세 남성 기준 가상 데이터)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>보험사 브랜드</th>
+                        <th>대표 상품명</th>
+                        <th>임플란트 보장액</th>
+                        <th>감액기간 조건</th>
+                        <th>예상 월 보험료</th>
+                        <th>상품별 핵심 장점</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>라이나생명</strong></td>
+                        <td>무배당 THE건강한치아보험V</td>
+                        <td>최대 200만원</td>
+                        <td>2년 미만 50퍼센트</td>
+                        <td>38,500원</td>
+                        <td>치아보험 시장 점유율 상위, 신속한 모바일 보험금 지급 청구 시스템</td>
+                    </tr>
+                    <tr>
+                        <td><strong>삼성화재</strong></td>
+                        <td>다이렉트 착한치아보험</td>
+                        <td>최대 150만원</td>
+                        <td>1년 미만 50퍼센트</td>
+                        <td>34,200원</td>
+                        <td>짧은 감액기간(1년 후 100퍼센트), 삼성 금융 앱 통합 마일리지 할인</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DB손해보험</strong></td>
+                        <td>참좋은치아사랑보험</td>
+                        <td>최대 200만원</td>
+                        <td>2년 미만 50퍼센트</td>
+                        <td>36,800원</td>
+                        <td>치조골 이식수술비 최대 50만원 지원, 60세 이상 인수 조건 완화</td>
+                    </tr>
+                    <tr>
+                        <td><strong>KB손해보험</strong></td>
+                        <td>KB 다이렉트 치아건강보험</td>
+                        <td>최대 150만원</td>
+                        <td>1년 미만 50퍼센트</td>
+                        <td>32,900원</td>
+                        <td>KB국민카드 결합 시 5퍼센트 추가 할인 혜택, 실속형 보장 구성 최적</td>
+                    </tr>
+                    <tr>
+                        <td><strong>메리츠화재</strong></td>
+                        <td>올바른치아보험 이목구비</td>
+                        <td>최대 200만원</td>
+                        <td>2년 미만 50퍼센트</td>
+                        <td>39,100원</td>
+                        <td>임플란트 연간 개수 무제한 조건 선택 가능, 안과 및 이비인후과 특약 확장</td>
+                    </tr>
+                    <tr>
+                        <td><strong>현대해상</strong></td>
+                        <td>퍼펙트치아종합보험</td>
+                        <td>최대 150만원</td>
+                        <td>2년 미만 50퍼센트</td>
+                        <td>35,400원</td>
+                        <td>가족 2인 이상 동시 가입 할인 프로모션, 충치 보존치료 보장 우수</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>보험료 다이어트 및 가성비 극대화 할인 방법</h3>
+            <p>치과보험을 <strong>제일 싼곳</strong>에서 경제적으로 유지하기 위한 4대 실천 <strong>하는법</strong>입니다.</p>
+            <ol>
+                <li><strong>다이렉트 비대면 채널 이용:</strong> 오프라인 대리점 대비 온라인 <strong>다이렉트</strong> 채널을 이용하면 사업비가 제외되어 매월 15퍼센트 이상 <strong>할인</strong>된 <strong>최저가</strong> 견적을 받습니다.</li>
+                <li><strong>자동이체 및 전용 카드 결제 할인:</strong> 보험료 자동이체 신청 또는 제휴 신용카드 실적 결합 시 월 1,000원~3,000원의 청구 할인을 적용받을 수 있습니다.</li>
+                <li><strong>비흡연자 및 구강검진 우량체 할인:</strong> 최근 1년간 비흡연 상태를 증명하거나 치과 구강검진 결과 이상 소견이 없음을 제출하면 회사에 따라 우량체 요율 혜택을 제공합니다.</li>
+                <li><strong>1년, 12개월 단기 유지 후 해지 전략 주의:</strong> 치료 목적으로 가입 후 <strong>1년(12개월)</strong> 시점에 치료를 완료하고 즉시 해지하는 경우, 납입한 <strong>계약금</strong>과 보험료에 대한 <strong>환불</strong> 금액(해약환급금)은 거의 없으며 <strong>위약금</strong> 성격의 원금 손실이 발생하므로 장단점을 신중히 따져야 합니다.</li>
+            </ol>
+        </section>
+
+        <!-- 섹션 4: 치료비용 데이터 및 시각화 그래프 -->
+        <section id="cost-graph">
+            <h2>2026년 임플란트 재료별 치료 비용 및 보장률 시각화</h2>
+            <p>임플란트 보철물 상부에 장착되는 <strong>크라운 종류</strong>와 식립 부위의 조건에 따라 치과의원마다 청구되는 <strong>비용</strong>이 다릅니다. 최신 비급여 치과 진료비 통계를 바탕으로 임플란트 치료 시 발생하는 실질적인 자부담금을 분석합니다.</p>
+
+            <div class="chart-container">
+                <p style="font-weight: 700; color: var(--text-title); margin-bottom: 1.5rem;">임플란트 1개당 평균 치료 비용 대비 치과보험 보장률 비교 (단위: 만원 기준)</p>
+                
+                <div class="bar-group">
+                    <div class="bar-header">
+                        <span>지르코니아 임플란트 (평균 140만원)</span>
+                        <span>보험 보장률: 100% ~ 142% (보장액 150~200만원)</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-header">
+                        <span>PFM 임플란트 (금속도재, 평균 110만원)</span>
+                        <span>보험 보장률: 136% ~ 180% (보장액 150~200만원)</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-header">
+                        <span>골드(금) 임플란트 (평균 160만원)</span>
+                        <span>보험 보장률: 93% ~ 125% (보장액 150~200만원)</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-header">
+                        <span>치조골 뼈이식 수술비 (평균 50만원 추가)</span>
+                        <span>특약 보장률: 60% ~ 100% (골이식 특약 30~50만원)</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>위 시각화 지표와 같이 치과보험의 정액 보장금(150만원~200만원)은 실제 발생하는 비급여 치료비 전액을 충분히 상쇄하며, 치조골 이식수술비 특약을 함께 가입할 경우 복합 수술 시 발생하는 본인부담금을 사실상 0원에 가깝게 줄일 수 있습니다.</p>
+        </section>
+
+        <!-- 섹션 5: 온라인 커뮤니티 후기 분석 -->
+        <section id="community-review">
+            <h2>디시, 펨코, 보배드림 실사용자 커뮤니티 내돈내산 가입 및 청구 후기 분석</h2>
+            <p>네티즌들이 자주 활동하는 <strong>디시</strong>(디시인사이드 보험갤러리), <strong>펨코</strong>(에펨코리아), <strong>보배드림</strong> 및 주요 포털 블로그의 <strong>내돈내산</strong> 임플란트 치과보험 청구 <strong>후기</strong>를 종합하면 실전 가입 시 유의해야 할 구체적인 조언들을 확인할 수 있습니다.</p>
+
+            <div class="highlight-box">
+                <h4>온라인 커뮤니티 핵심 팁 요약 (디시인사이드 및 에펨코리아 성지 좌표 분석)</h4>
+                <ul>
+                    <li><strong>고지의무 위반 주의:</strong> 최근 1년 이내 충치 또는 잇몸 질환으로 의사로부터 치료나 투약 소견을 받았거나, 최근 5년 이내 잇몸병으로 영구치를 발치한 이력이 있다면 반드시 사실대로 고지해야 합니다. 이를 숨기고 가입할 경우 보험금 지급 거절 및 강제 계약 해지 처리가 됩니다.</li>
+                    <li><strong>가입 성지 좌표 및 다이렉트 가입 혜택:</strong> 불필요한 사은품이나 현금지원 프로모션에 현혹되기보다, 매달 청구되는 보험료 자체를 깎아주는 <strong>다이렉트 최저가</strong> 좌표 사이트를 찾는 것이 3년 총비용 측면에서 훨씬 유리합니다.</li>
+                    <li><strong>치과 치료 전 발치 날짜 확인:</strong> 임플란트 보험금은 치아를 식립한 날이 아니라 <strong>영구치를 발치한 날짜</strong>를 기준으로 면책 및 감액기간을 판정합니다. 가입 전 이미 뽑아둔 치아(기존 결손치) 자리에 심는 임플란트는 보험금 지급 대상에서 제외되므로 주의해야 합니다.</li>
+                </ul>
+            </div>
+
+            <p>커뮤니티 이용자들은 <strong>카카오톡</strong> 간편 청구나 모바일 <strong>앱</strong>(어플)을 통한 서류 접수 편의성을 매우 중요하게 평가하고 있으며, 치과 발행 필수 서류(진료기록부 사본, 영구치 발치 전후 엑스레이 파노라마 사진, 치과치료확인서)를 사전에 꼼꼼히 챙길 것을 권장하고 있습니다.</p>
+        </section>
+
+        <!-- 섹션 6: AI 에이전트 분석 (챗지피티, 제미나이 등) -->
+        <section id="ai-insights">
+            <h2>AI 에이전트 분석: 챗지피티(ChatGPT), 제미나이(Gemini)가 제시하는 치과보험 스마트 가입 공식</h2>
+            <p>최근 <strong>AI</strong>(인공지능) 기반의 분석 도구인 <strong>챗지피티</strong>(ChatGPT)와 <strong>제미나이</strong>(Gemini)를 활용하여 수많은 약관과 요금 데이터를 크롤링하고 비교하는 스마트 소비자가 증가하고 있습니다. 생성형 AI 에이전트가 공통적으로 권장하는 치과보험 <strong>컨설팅</strong> 알고리즘은 다음과 같습니다.</p>
+
+            <div class="warm-box">
+                <h4>AI 에이전트가 도출한 임플란트 치과보험 3대 점검 매트릭스</h4>
+                <ol>
+                    <li><strong>손익분기점 계산:</strong> (월 보험료 × 유지 개월 수) vs (예상 식립 개수 × 개당 수령 보험금). 2년간 4만원씩 납입(약 96만원) 후 임플란트 2개 식립 시 300만원을 수령하여 순이익 204만원 발생.</li>
+                    <li><strong>갱신 주기 최적화:</strong> 40대~50대는 보철 치료 가능성이 높은 5년~10년 주기의 비갱신형 또는 장기 갱신형 상품을 선택하여 갱신 시점의 급격한 보험료 인상을 억제할 것.</li>
+                    <li><strong>알뜰폰 및 금융 플랫폼 결합:</strong> <strong>토스</strong>, <strong>네이버페이</strong> 등의 핀테크 플랫폼을 통해 보험료 견적을 비교하고 포인트 적립 혜택을 챙길 것.</li>
+                </ol>
+            </div>
+
+            <p><strong>구글</strong>, <strong>유튜브</strong>, <strong>인스타그램</strong>, <strong>페이스북</strong>, <strong>트위터</strong>, <strong>텔레그램</strong> 등 다양한 소셜 채널에서도 최신 2026년 보험 약관 개정 사항과 특약 신설 정보가 실시간으로 공유되고 있으므로 교차 검증을 거치는 것이 안전합니다.</p>
+        </section>
+
+        <!-- 섹션 7: 실시간 예상 견적 계산기 시뮬레이터 -->
+        <section id="interactive-calc">
+            <h2>실시간 임플란트 치과보험 예상 견적 및 환급금 계산기</h2>
+            <p>본인의 연령과 예상 치료 계획을 입력하여 월 납입 보험료와 향후 수령 가능한 예상 보험금 총액을 즉시 시뮬레이션해보세요.</p>
+
+            <div class="calc-wrapper">
+                <div class="calc-grid">
+                    <div class="calc-field">
+                        <label for="user-age-group">연령대 선택</label>
+                        <select id="user-age-group">
+                            <option value="20">20대 (청년층)</option>
+                            <option value="30">30대 (사회초년생/직장인)</option>
+                            <option value="40" selected>40대 (중년층)</option>
+                            <option value="50">50대 (장년층)</option>
+                            <option value="60">60대 (실버/은퇴자)</option>
+                            <option value="70">70대 이상 (어르신)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-field">
+                        <label for="implant-count">치료 예정 임플란트 개수</label>
+                        <select id="implant-count">
+                            <option value="1">1개</option>
+                            <option value="2" selected>2개</option>
+                            <option value="3">3개</option>
+                            <option value="4">4개 이상</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-field">
+                        <label for="bone-graft">치조골 뼈이식 수술 여부</label>
+                        <select id="bone-graft">
+                            <option value="yes" selected>뼈이식 필요 (특약 포함)</option>
+                            <option value="no">뼈이식 불필요 (기본형)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-field">
+                        <label for="plan-tier">희망 보장 플랜 수준</label>
+                        <select id="plan-tier">
+                            <option value="basic">실속형 (임플란트 개당 100만원)</option>
+                            <option value="standard" selected>표준형 (임플란트 개당 150만원)</option>
+                            <option value="premium">고급형 (임플란트 개당 200만원)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="calc-btn" onclick="calculateDentalQuote()">예상 보험료 및 보장금액 계산하기</button>
+
+                <div id="calc-result" class="calc-result-box">
+                    <div class="calc-result-row">
+                        <span>예상 월 납입 보험료:</span>
+                        <span id="res-monthly-premium" style="font-weight: 700; color: var(--primary);">38,000원</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span>2년(24개월) 총 납입 보험료:</span>
+                        <span id="res-total-premium">912,000원</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span>임플란트 식립 기본 보장금:</span>
+                        <span id="res-implant-payout">3,000,000원</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span>치조골 이식수술 추가 보장금:</span>
+                        <span id="res-bone-payout">600,000원</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span>치료 시 총 수령 예상 보험금:</span>
+                        <span id="res-total-benefit">3,600,000원</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span>보험을 통한 순 경제적 절감 효과:</span>
+                        <span id="res-net-benefit">+2,688,000원</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 8: 공신력 있는 외부 공식 사이트 링크 -->
+        <section id="external-sources">
+            <h2>공신력 있는 공식 외부 정보 및 제도 안내</h2>
+            <p>치과보험 및 공적 건강보험 임플란트 급여 기준에 대한 정확한 정보는 아래의 정부 공인 기관 및 공신력 있는 포털 자료를 통해 확인하실 수 있습니다.</p>
+
+            <div class="ext-links-card">
+                <a href="https://dentalbestubohumo.directreliable.com" class="ext-link-item" target="_blank" rel="noopener noreferrer">
+                    치과보험 보장 비교 연구소 (guide.reliabledone.com)
+                    <span class="ext-link-desc">2026년 최신 보험사별 비급여 임플란트 지급 규정 및 약관 상세 비교 분석 자료실</span>
+                </a>
+                <a href="https://www.nhis.or.kr" class="ext-link-item" target="_blank" rel="noopener noreferrer">
+                    국민건강보험공단 (NHIS)
+                    <span class="ext-link-desc">만 65세 이상 어르신 치과 임플란트 및 틀니 건강보험 요양급여 적용 기준 공식 안내</span>
+                </a>
+                <a href="https://www.hira.or.kr" class="ext-link-item" target="_blank" rel="noopener noreferrer">
+                    건강보험심사평가원 (HIRA)
+                    <span class="ext-link-desc">전국 치과의원별 비급여 임플란트 진료비용 및 치조골 이식술 가격 정보 공개 포털</span>
+                </a>
+                <a href="https://namu.wiki/w/%EC%B9%98%EC%95%84%EB%B3%B4%ED%97%98" class="ext-link-item" target="_blank" rel="noopener noreferrer">
+                    나무위키 치아보험 문서
+                    <span class="ext-link-desc">치아보험의 역사, 보철치료 및 보존치료의 면책기간/감액기간에 대한 백과사전식 해설</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 섹션 9: 자주 묻는 질문 FAQ -->
+        <section id="faq-section">
+            <h2>임플란트 치과보험 자주 묻는 질문 (FAQ)</h2>
+
+            <div class="faq-card">
+                <div class="faq-q" onclick="toggleFaq(this)">
+                    <div class="faq-q-text">
+                        <span class="faq-mark">Q</span>
+                        <span>가입 전 이미 발치된 빈 공간에 임플란트를 심어도 보험금이 나오나요?</span>
+                    </div>
+                    <span class="faq-toggle-state">펼치기</span>
+                </div>
+                <div class="faq-a">
+                    A: 원칙적으로 보험금이 지급되지 않습니다. 치과보험의 보철치료 담보는 <strong>보험 가입 이후에 치과의사의 진단에 의해 발치된 영구치</strong>에 대해서만 보장합니다. 가입 전에 이미 영구치가 상실되어 있던 무치악 부위에 식립하는 임플란트는 보장 대상에서 제외됩니다.
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-q" onclick="toggleFaq(this)">
+                    <div class="faq-q-text">
+                        <span class="faq-mark">Q</span>
+                        <span>65세 이상인데 건강보험 임플란트와 사보험을 동시에 받으면 어떻게 되나요?</span>
+                    </div>
+                    <span class="faq-toggle-state">펼치기</span>
+                </div>
+                <div class="faq-a">
+                    A: 완벽한 <strong>중복 수령</strong>이 가능합니다. 만 65세 이상 국민은 평생 2개까지 건강보험 혜택을 통해 약 30퍼센트(약 40만원)의 본인부담금만 내고 치료를 받게 됩니다. 이때 본인이 가입한 민간 치과보험은 실손형이 아닌 <strong>정액 보장형</strong>이므로, 약정된 가입금액(예: 150만원)이 그대로 정액 지급되어 실제 치료비를 내고도 차액이 남게 됩니다.
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-q" onclick="toggleFaq(this)">
+                    <div class="faq-q-text">
+                        <span class="faq-mark">Q</span>
+                        <span>치과보험의 면책기간 90일과 감액기간 2년은 어떻게 계산되나요?</span>
+                    </div>
+                    <span class="faq-toggle-state">펼치기</span>
+                </div>
+                <div class="faq-a">
+                    A: 계약일로부터 90일까지는 면책기간으로, 이 기간에 치아를 발치하면 보험금이 0원입니다. 91일째부터 1년 또는 2년(상품별 상이)까지는 감액기간으로 가입 금액의 50퍼센트만 지급됩니다. 2년이 경과한 다음 날부터 비로소 가입 금액의 100퍼센트가 지급되며 연간 개수 제한도 사라집니다.
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-q" onclick="toggleFaq(this)">
+                    <div class="faq-q-text">
+                        <span class="faq-mark">Q</span>
+                        <span>임플란트 수술 실패로 재수술을 하게 되면 보험금이 또 나오나요?</span>
+                    </div>
+                    <span class="faq-toggle-state">펼치기</span>
+                </div>
+                <div class="faq-a">
+                    A: 일반적인 기본 임플란트 특약은 동일한 치아 자리에 대해 최초 1회만 지급하고 소멸합니다. 다만 <strong>재식립 임플란트 특약</strong>에 별도로 가입되어 있다면, 골유착 실패 등으로 기존 임플란트를 제거하고 재식립할 때 회당 50만원에서 100만원의 보험금을 추가로 지급받을 수 있습니다.
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-q" onclick="toggleFaq(this)">
+                    <div class="faq-q-text">
+                        <span class="faq-mark">Q</span>
+                        <span>보험금 청구 시 필요한 서류와 신청 절차는 어떻게 되나요?</span>
+                    </div>
+                    <span class="faq-toggle-state">펼치기</span>
+                </div>
+                <div class="faq-a">
+                    A: 치과 치료 완료 후 치과 데스크에 요청하여 1) 보험사 양식 치과치료확인서, 2) 진료기록부(차트) 사본, 3) 영구치 발치 전후 방사선 사진(파노라마 X-ray) 사본, 4) 진료비 세부내역서 및 영수증을 발급받아 해당 보험사의 스마트폰 앱이나 웹사이트를 통해 접수하시면 영업일 기준 3일 이내에 지급됩니다.
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
-</html>
+
+
+  
+    <script>
+        // FAQ 아코디언 토글 함수
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const stateText = element.querySelector('.faq-toggle-state');
+            const isOpen = answer.style.display === 'block';
+
+            document.querySelectorAll('.faq-a').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-toggle-state').forEach(s => s.textContent = '펼치기');
+
+            if (!isOpen) {
+                answer.style.display = 'block';
+                stateText.textContent = '접기';
+            }
+        }
+
+        // 실시간 견적 계산기 로직
+        function calculateDentalQuote() {
+            const age = parseInt(document.getElementById('user-age-group').value);
+            const count = parseInt(document.getElementById('implant-count').value);
+            const boneGraft = document.getElementById('bone-graft').value === 'yes';
+            const tier = document.getElementById('plan-tier').value;
+
+            let basePremium = 0;
+            let implantPayoutPerTooth = 0;
+            let bonePayoutPerTooth = boneGraft ? 300000 : 0;
+
+            if (tier === 'basic') {
+                implantPayoutPerTooth = 1000000;
+                basePremium = 22000;
+            } else if (tier === 'standard') {
+                implantPayoutPerTooth = 1500000;
+                basePremium = 34000;
+            } else {
+                implantPayoutPerTooth = 2000000;
+                basePremium = 46000;
+            }
+
+            if (age === 20) basePremium *= 0.65;
+            else if (age === 30) basePremium *= 0.85;
+            else if (age === 40) basePremium *= 1.05;
+            else if (age === 50) basePremium *= 1.45;
+            else if (age === 60) basePremium *= 1.75;
+            else if (age >= 70) basePremium *= 2.05;
+
+            if (boneGraft) basePremium += 4500;
+
+            const monthlyPremiumRounded = Math.round(basePremium / 100) * 100;
+            const totalPremium24M = monthlyPremiumRounded * 24;
+            const totalImplantPayout = implantPayoutPerTooth * count;
+            const totalBonePayout = bonePayoutPerTooth * count;
+            const totalBenefit = totalImplantPayout + totalBonePayout;
+            const netBenefit = totalBenefit - totalPremium24M;
+
+            document.getElementById('res-monthly-premium').textContent = monthlyPremiumRounded.toLocaleString() + '원';
+            document.getElementById('res-total-premium').textContent = totalPremium24M.toLocaleString() + '원';
+            document.getElementById('res-implant-payout').textContent = totalImplantPayout.toLocaleString() + '원';
+            document.getElementById('res-bone-payout').textContent = totalBonePayout.toLocaleString() + '원';
+            document.getElementById('res-total-benefit').textContent = totalBenefit.toLocaleString() + '원';
+            
+            const netBenefitEl = document.getElementById('res-net-benefit');
+            if (netBenefit >= 0) {
+                netBenefitEl.textContent = '+' + netBenefit.toLocaleString() + '원 이득';
+                netBenefitEl.style.color = '#0f766e';
+            } else {
+                netBenefitEl.textContent = netBenefit.toLocaleString() + '원';
+                netBenefitEl.style.color = '#b45309';
+            }
+
+            document.getElementById('calc-result').style.display = 'block';
+        }
+
+        // 페이지 로딩 시 그래프 바 애니메이션 활성화
+        window.addEventListener('DOMContentLoaded', () => {
+            const fills = document.querySelectorAll('.bar-fill');
+            fills.forEach(fill => {
+                const target = fill.style.width;
+                fill.style.width = '0%';
+                setTimeout(() => {
+                    fill.style.width = target;
+                }, 200);
+            });
+        });
+    </script>
+  
